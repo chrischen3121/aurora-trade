@@ -1,3 +1,7 @@
 #+title: Readme
 
 - In the beginning there was darkness
+
+* Services
+** Market Data
+The Market Data Service will act as a central hub for market data, ingesting data from various connectors, *standardizing it*, and then publishing it to interested subscribers within our system.
