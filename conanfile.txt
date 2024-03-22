@@ -1,0 +1,7 @@
+[requires]
+cppzmq/4.10.0
+protobuf/3.21.12
+
+[generators]
+CMakeDeps
+CMakeToolchain
