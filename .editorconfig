@@ -1,0 +1,25 @@
+# Top-most EditorConfig file
+root = true
+
+# All files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# C++ files
+[*.cpp,*.h,*.cc,*.hh,*.hpp,*.cxx,*.hxx]
+indent_style = spaces
+indent_size = 2
+max_line_length = 80
+
+# Use spaces instead of tabs for indentation
+tab_width = 2
+
+# Python files
+[*.py]
+indent_style = spaces
+indent_size = 4
+tab_width = 4
+max_line_length = 88
