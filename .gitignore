@@ -31,6 +31,19 @@
 *.out
 *.app
 
-# CMake build directory
+# CMake files
+.cache/
+.cmake/
+CMakeFiles/
+CMakeCache.txt
+CMakeUserPresets.json
+Makefile
+cmake_install.cmake
+compile_commands.json
 build/
 
+# Emacs local configuration
+.dir-locals.el
+
+# experimental directory
+sandbox/
