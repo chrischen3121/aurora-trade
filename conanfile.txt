@@ -1,6 +1,6 @@
 [requires]
 cppzmq/4.10.0
-protobuf/3.21.12
+protobuf/5.27.0
 
 [generators]
 CMakeDeps
