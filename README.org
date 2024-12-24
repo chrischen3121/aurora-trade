@@ -1,6 +1,23 @@
 #+title: Readme
 
-- In the beginning there was darkness
+* Modules
+- Client Layer: User interfaces (Qt)
+  - Desktop: PySide6
+  - Web Application: Flask
+- API Gateway: Entry point for all client requests (FastAPI)
+- Broker API Integration: Interface to connect with retail broker APIs. (maybe C++)
+- Quote API Integration: Component for ingesting and distributing market data. (maybe ZeroMQ with zero-copy)
+- Risk Management: Ensures trades comply with regulations and risk limits.
+- Data Storage: MongoDB or PostgreSQL
+  - Storing historical data and strategy performance metrics.
+  - Persisting trade data
+- System log: maybe elastic search
+- Communication Infrastructure: message queue or ZeroMQ
+- Strategy Engine: Component for executing custom trading strategies.
+  - Support backtesting
+  - Python for prototyping
+  - Algo Engine sub-module: Handling order executions
+- Monitoring and alerting
 
 * Services
 ** Market Data
