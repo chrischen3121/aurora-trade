@@ -1,15 +1,35 @@
 [tool.poetry]
-name = "aurora-trade"
-version = "0.1.0"
+name = "autrade"
+version = "0.0.1"
 description = "A standalone simple trading system for retail trader"
 authors = ["chrischen <chrischen@ignity.xyz>"]
-license = "MIT License"
-readme = "README.md"
+maintainers = ["chrischen <chrischen@ignity.xyz>"]
+license = "MIT"
+readme = "README.org"
+repository = "https://github.com/chrischen3121/aurora-trade"
+keywords = ["trading", "quantitative", "finance"]
+
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: C++",
+]
 
 [tool.poetry.dependencies]
 python = "^3.13"
+longport = "^2.1.5"
+pydantic = "^2.10.4"
+cryptography = "^44.0.0"
 
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.31.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py39', 'py310', 'py311']

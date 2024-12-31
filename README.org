@@ -1,12 +1,13 @@
 #+title: Readme
-
+xo
 * Modules
 - Client Layer: User interfaces (Qt)
   - Desktop: PySide6
   - Web Application: Flask
-- API Gateway: Entry point for all client requests (FastAPI)
+- API Gateway: Entry point for all client requests (ZeroMQ)
 - Broker API Integration: Interface to connect with retail broker APIs. (maybe C++)
 - Quote API Integration: Component for ingesting and distributing market data. (maybe ZeroMQ with zero-copy)
+- Broker Account Management
 - Risk Management: Ensures trades comply with regulations and risk limits.
 - Data Storage: MongoDB or PostgreSQL
   - Storing historical data and strategy performance metrics.

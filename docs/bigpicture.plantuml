@@ -1,0 +1,9 @@
+@startuml
+rectangle "Application" as app
+package "Broker Intergration" as broker_int {
+    collections "Quote Services" as quote_srv
+    collections "Broker Services" as broker_srv
+}
+app -u-> quote_srv : ZMQ
+app -u-> broker_srv : ZMQ
+@enduml
