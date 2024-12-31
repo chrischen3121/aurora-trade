@@ -47,3 +47,7 @@ build/
 
 # experimental directory
 sandbox/
+
+# Python
+__pycache__/
+*.pyc
