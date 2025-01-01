@@ -1,3 +1,3 @@
-from ._appdirs import appdirs
+from ._context import ctx
 
-__all__ = ["appdirs"]
+__all__ = ["ctx"]

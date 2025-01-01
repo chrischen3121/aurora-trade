@@ -1,5 +1,11 @@
 #!/usr/bin/env python
-from artrade.configs import appdirs
+from artrade.configs import ctx
 
-if __name__ == '__main__':
-    print(appdirs.user_dotenv)
+
+def main():
+    print(ctx.secret_key)
+    # print(appdirs.user_dotenv)
+
+
+if __name__ == "__main__":
+    main()
