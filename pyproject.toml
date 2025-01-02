@@ -13,9 +13,9 @@ classifiers = [
     "Development Status :: 1 - Planning",
     "Framework :: AsyncIO",
     "Intended Audience :: Financial and Insurance Industry",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Programming Language :: C++",
 ]
 
@@ -34,6 +34,9 @@ ipython = "^8.31.0"
 sphinx = "^8.1.3"
 pytest = "^8.3.4"
 pympler = "^1.1"
+basedpyright = "^1.23.1"
+black = "^24.10.0"
+pytest-cov = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -41,4 +44,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.black]
 line-length = 88
-target-version = ['py39', 'py310', 'py311']
+target-version = ['py311', 'py312', 'py313']
+
+[tool.tox]
+env_list = ["3.11", "3.12", "3.13"]
