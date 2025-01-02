@@ -37,7 +37,6 @@
 CMakeFiles/
 CMakeCache.txt
 CMakeUserPresets.json
-Makefile
 cmake_install.cmake
 compile_commands.json
 build/
@@ -51,3 +50,4 @@ sandbox/
 # Python
 __pycache__/
 *.pyc
+.coverage
