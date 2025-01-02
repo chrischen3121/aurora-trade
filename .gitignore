@@ -47,6 +47,9 @@ build/
 # experimental directory
 sandbox/
 
+# Sphinx documentation
+docs/_build/
+
 # Python
 __pycache__/
 *.pyc
